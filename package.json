@@ -1,7 +1,23 @@
 {
   "name": "boms",
+  "description": "Back Office Management System (BOMS)",
   "version": "0.1.0",
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "Theerawat Pongsupawat",
+    "email": "rxseven.com@gmail.com",
+    "url": "http://www.rxseven.com"
+  },
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxseven/boms.git"
+  },
+  "engines": {
+    "node": "12.9.1",
+    "npm": "6.10.2"
+  },
+  "main": "index.js",
   "scripts": {
     "build": "node scripts/build.js",
     "start": "node scripts/start.js",
