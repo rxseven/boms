@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "prop-types": "15.7.2",
+    "prop-types-exact": "1.2.0",
     "react": "16.9.0",
     "react-app-polyfill": "1.0.2",
     "react-dev-utils": "9.0.3",
