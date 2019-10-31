@@ -10133,6 +10133,11 @@ stylelint-config-css-modules@1.5.0:
   resolved "https://registry.yarnpkg.com/stylelint-config-css-modules/-/stylelint-config-css-modules-1.5.0.tgz#c7d901db052f5a2ee3135dde51490d34c281add3"
   integrity sha512-Zz0Q8VLpUcgOXIuXWz7Iq5FkyF6e3eYAZoA6NpJpzux+lL99z11j5tTdcEHoPwB2YDXxbB50QypCuaQp80YuXQ==
 
+stylelint-config-prettier@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-6.0.0.tgz#600aa218d8e34cf44a025903b0f60c079fd83366"
+  integrity sha512-f/BKiUAczB4KODC1w5eY6LoNgfq6QzdSnSc4ccAATKo1IfYCuG3IZwaxj/5AAxl1kyaW7kPLBOXG66O4gSIKTQ==
+
 stylelint-config-recommended@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-3.0.0.tgz#e0e547434016c5539fe2650afd58049a2fd1d657"
