@@ -21,6 +21,7 @@
   "files.associations": {
     ".babelrc": "json",
     ".eslintrc": "json",
+    ".prettierrc": "json",
     ".stylelintrc": "json"
   },
 
