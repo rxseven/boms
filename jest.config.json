@@ -1,8 +1,5 @@
 {
-  "collectCoverageFrom": [
-    "src/**/*.{js,jsx,ts,tsx}",
-    "!src/**/*.d.ts"
-  ],
+  "collectCoverageFrom": ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
   "moduleFileExtensions": [
     "js",
     "json",
@@ -20,12 +17,8 @@
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
   },
   "modulePaths": [],
-  "roots": [
-    "<rootDir>/src"
-  ],
-  "setupFiles": [
-    "react-app-polyfill/jsdom"
-  ],
+  "roots": ["<rootDir>/src"],
+  "setupFiles": ["react-app-polyfill/jsdom"],
   "setupFilesAfterEnv": [],
   "testMatch": [
     "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
