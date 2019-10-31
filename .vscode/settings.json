@@ -13,7 +13,8 @@
   // File associations to languages
   "files.associations": {
     ".babelrc": "json",
-    ".eslintrc": "json"
+    ".eslintrc": "json",
+    ".stylelintrc": "json"
   },
 
   // Use ESLint for JavaScript and TypeScript linting rather than
