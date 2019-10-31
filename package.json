@@ -21,6 +21,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "format": "prettier --write src/**/*.{js,json,jsx}",
+    "format:check": "prettier --check src/**/*.{js,json,jsx}",
     "lint:script": "eslint src --ext .js,.jsx",
     "lint:script:fix": "eslint --fix src --ext .js,.jsx",
     "lint:styles:css": "stylelint src/**/*.css",
