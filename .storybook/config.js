@@ -1,9 +1,13 @@
 import React from 'react';
+import { checkA11y } from '@storybook/addon-a11y';
 import { configureActions } from '@storybook/addon-actions';
 import { addParameters, addDecorator, configure } from '@storybook/react';
 
 import Wrapper from './decorators/Wrapper';
 import './styles.scss';
+
+// A11Y addon
+addDecorator(checkA11y);
 
 // Actions addon
 configureActions({
