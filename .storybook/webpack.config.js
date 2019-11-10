@@ -53,6 +53,29 @@ const webpackConfig = ({ config, mode }) => {
 
   // Extend Storybook's default configuration
   config.module.rules.push(
+    // Storysource addon
+    {
+      enforce: 'pre',
+      loaders: [
+        {
+          loader: require.resolve('@storybook/addon-storysource/loader'),
+          options: {
+            injectDecorator: true,
+            parser: 'javascript',
+            prettierConfig: {
+              bracketSpacing: true,
+              printWidth: 120,
+              singleQuote: true,
+              tabWidth: 2,
+              trailingComma: 'es5'
+            },
+            uglyCommentsRegex: [/^eslint-.*/, /^global.*/]
+          }
+        }
+      ],
+      test: regexStorybook
+    },
+
     // SCSS
     {
       exclude: regexCSSmodule,
