@@ -67,6 +67,7 @@
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@quickbaseoss/babel-plugin-styled-components-css-namespace": "1.0.0-rc3",
+    "@storybook/addon-actions": "5.2.6",
     "@storybook/addons": "5.2.6",
     "@storybook/components": "5.2.6",
     "@storybook/react": "5.2.6",
