@@ -13,8 +13,8 @@ addParameters({
   ]
 });
 
-// Import story files
-configure(require.context('../src', true, /\.stories\.jsx?$/), module);
-
 // Wrap each story within a container
 addDecorator(story => <Wrapper>{story()}</Wrapper>);
+
+// Import story files
+configure(require.context('../src', true, /\.stories\.jsx?$/), module);
