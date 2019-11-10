@@ -1,8 +1,16 @@
 import React from 'react';
+import { configureActions } from '@storybook/addon-actions';
 import { addParameters, addDecorator, configure } from '@storybook/react';
 
 import Wrapper from './decorators/Wrapper';
 import './styles.scss';
+
+// Actions addon
+configureActions({
+  clearOnStoryChange: true,
+  depth: 10,
+  limit: 50
+});
 
 // Backgrounds addon
 addParameters({
