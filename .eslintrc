@@ -1,19 +1,25 @@
 {
-  "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
+  "env": {
+    "jest/globals": true
+  },
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/react"
+  ],
   "plugins": ["prettier"],
   "rules": {
     "comma-dangle": ["error", "never"],
-    "no-unused-vars": [
-      "error",
-      {
-        "args": "none",
-        "vars": "local"
-      }
-    ],
-    "no-useless-escape": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -23,6 +29,14 @@
     ],
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/label-has-for": "off",
+    "no-useless-escape": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "vars": "local"
+      }
+    ],
     "react/jsx-filename-extension": "off",
     "react/no-string-refs": "off",
     "react/prop-types": "off"

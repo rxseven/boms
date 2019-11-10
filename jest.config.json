@@ -1,7 +1,21 @@
 {
-  "collectCoverageFrom": [
-    "src/**/*.{js,jsx,ts,tsx}",
-    "!src/**/*.d.ts"
+  "collectCoverageFrom": ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/.vscode/",
+    "<rootDir>/build/",
+    "<rootDir>/config/",
+    "<rootDir>/coverage/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/public/",
+    "<rootDir>/scripts/",
+    "<rootDir>/src/__mock__/",
+    "<rootDir>/src/config/",
+    "<rootDir>/src/constants/",
+    "<rootDir>/src/libraries/",
+    "<rootDir>/src/tests/",
+    "<rootDir>/src/serviceWorker.js",
+    "<rootDir>/src/setupTests.js",
+    "<rootDir>/tmp/"
   ],
   "moduleFileExtensions": [
     "js",
@@ -20,18 +34,31 @@
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
   },
   "modulePaths": [],
-  "roots": [
-    "<rootDir>/src"
-  ],
-  "setupFiles": [
-    "react-app-polyfill/jsdom"
-  ],
-  "setupFilesAfterEnv": [],
+  "roots": ["<rootDir>/src"],
+  "setupFiles": ["react-app-polyfill/jsdom"],
+  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
   "testMatch": [
     "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
     "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
   ],
   "testEnvironment": "jest-environment-jsdom-fourteen",
+  "testPathIgnorePatterns": [
+    "<rootDir>/.vscode/",
+    "<rootDir>/build/",
+    "<rootDir>/config/",
+    "<rootDir>/coverage/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/public/",
+    "<rootDir>/scripts/",
+    "<rootDir>/src/__mock__/",
+    "<rootDir>/src/config/",
+    "<rootDir>/src/constants/",
+    "<rootDir>/src/libraries/",
+    "<rootDir>/src/tests/",
+    "<rootDir>/src/serviceWorker.js",
+    "<rootDir>/src/setupTests.js",
+    "<rootDir>/tmp/"
+  ],
   "transform": {
     "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
     "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
