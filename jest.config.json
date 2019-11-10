@@ -25,6 +25,22 @@
     "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
   ],
   "testEnvironment": "jest-environment-jsdom-fourteen",
+  "testPathIgnorePatterns": [
+    "<rootDir>/.vscode/",
+    "<rootDir>/build/",
+    "<rootDir>/config/",
+    "<rootDir>/coverage/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/public/",
+    "<rootDir>/scripts/",
+    "<rootDir>/src/__mock__/",
+    "<rootDir>/src/config/",
+    "<rootDir>/src/constants/",
+    "<rootDir>/src/libraries/",
+    "<rootDir>/src/tests/",
+    "<rootDir>/src/serviceWorker.js",
+    "<rootDir>/tmp/"
+  ],
   "transform": {
     "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
     "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
