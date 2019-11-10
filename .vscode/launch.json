@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "name": "Debug JavaScript",
+      "request": "launch",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      },
+      "type": "chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}/src"
+    },
+    {
+      "args": ["test", "--runInBand", "--no-cache", "--watchAll=false"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceRoot}",
+      "disableOptimisticBPs": true,
+      "env": { "CI": "true" },
+      "internalConsoleOptions": "neverOpen",
+      "name": "Debug CRA Tests",
+      "protocol": "inspector",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",
+      "type": "node"
+    }
+  ],
+  "version": "0.2.0"
+}
