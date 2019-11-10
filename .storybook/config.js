@@ -1,6 +1,7 @@
 import React from 'react';
 import { checkA11y } from '@storybook/addon-a11y';
 import { configureActions } from '@storybook/addon-actions';
+import { configureViewport } from '@storybook/addon-viewport';
 import { addParameters, addDecorator, configure } from '@storybook/react';
 
 import Wrapper from './decorators/Wrapper';
@@ -23,6 +24,11 @@ addParameters({
     { name: 'Dark', value: '#242424' },
     { name: 'Facebook', value: '#3b5998' }
   ]
+});
+
+// Viewport addon
+configureViewport({
+  defaultViewport: 'responsive'
 });
 
 // Wrap each story within a container
