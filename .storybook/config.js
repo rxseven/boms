@@ -4,6 +4,7 @@ import { configureActions } from '@storybook/addon-actions';
 import { configureViewport } from '@storybook/addon-viewport';
 import { addParameters, addDecorator, configure } from '@storybook/react';
 
+import Providers from '../src/components/core/skeleton/Providers';
 import Wrapper from './decorators/Wrapper';
 import './styles.scss';
 
@@ -30,6 +31,9 @@ addParameters({
 configureViewport({
   defaultViewport: 'responsive'
 });
+
+// Wrap each story within context providers
+addDecorator(story => <Providers>{story()}</Providers>);
 
 // Wrap each story within a container
 addDecorator(story => <Wrapper>{story()}</Wrapper>);
