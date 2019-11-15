@@ -1,3 +1,4 @@
+const path = require('path');
 const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
 
 const regexCSSmodule = /\.module\.scss$/;
@@ -50,6 +51,9 @@ const webpackConfig = ({ config, mode }) => {
 
     return loaders;
   };
+
+  // Enable support for importing modules using absolute paths
+  config.resolve.modules.push(path.resolve(__dirname, '../src'));
 
   // Extend Storybook's default configuration
   config.module.rules.push(
