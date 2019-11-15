@@ -13,6 +13,7 @@
 
 # production
 /build
+/storybook-static
 
 # temporary files and directories
 /tmp
