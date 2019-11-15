@@ -1,11 +1,13 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 
+import { Providers, Routes } from 'components/core';
+
 function App() {
   return (
-    <div>
-      <h1>BOMS</h1>
-    </div>
+    <Providers>
+      <Routes />
+    </Providers>
   );
 }
 
