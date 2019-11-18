@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from 'serviceWorker';
 import App from 'components/core/skeleton/App';
 import HTML from 'constants/common/elements';
+import 'libraries/icons';
 import 'styles/index.scss';
 
 // Get root HTML element with the specified ID
