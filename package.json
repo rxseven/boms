@@ -44,6 +44,7 @@
     "test:verbose": "npm test -- --verbose"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.25",
     "axios": "0.19.0",
     "bootstrap": "4.3.1",
     "classnames": "2.2.6",
