@@ -7,6 +7,9 @@ import { addParameters, addDecorator, configure } from '@storybook/react';
 // Application context providers
 import Providers from '../src/components/core/skeleton/Providers';
 
+// Application libraries
+import '../src/libraries/icons';
+
 // Application styles
 import '../src/styles/index.scss';
 
