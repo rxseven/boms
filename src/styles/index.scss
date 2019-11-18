@@ -1,21 +1,21 @@
 // Base
-@import "styles/base/settings";
-@import "styles/base/normalize";
-@import "styles/base/custom";
+@import "./base/settings";
+@import "./base/normalize";
+@import "./base/custom";
 
 // 3rd party libraries
-@import "styles/vendor/frameworks";
-@import "styles/vendor/plugins";
+@import "./vendor/frameworks";
+@import "./vendor/plugins";
 
 // Mixins
 @import "./mixins/utilities";
 
 // Utilities
-@import "styles/utilities/override";
+@import "./utilities/override";
 
 // Skeleton
-@import "styles/base/normalize";
-@import "styles/skeleton/layout";
+@import "./base/normalize";
+@import "./skeleton/layout";
 
 // Content
 @import "./content/typography";
