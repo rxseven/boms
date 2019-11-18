@@ -4,7 +4,13 @@ import { configureActions } from '@storybook/addon-actions';
 import { configureViewport } from '@storybook/addon-viewport';
 import { addParameters, addDecorator, configure } from '@storybook/react';
 
+// Application context providers
 import Providers from '../src/components/core/skeleton/Providers';
+
+// Application styles
+import '../src/styles/index.scss';
+
+// Storybook wrappers and styles
 import Wrapper from './decorators/Wrapper';
 import './styles.scss';
 
